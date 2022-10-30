@@ -22,11 +22,16 @@ void Zadacha13()//Задача 13.Написать программу, кото�
 {
     Random random=new Random();
     int number =random.Next(10,150);
-    
+    if(number>100)
+    {
     int number1= number%100;
     int number2=number1%10;
     Console.WriteLine("Введеное число: "+ number+ " Третья цифра: "+ number2);
-    
+    }
+    else
+    {
+        Console.WriteLine("Введеное число:" +number+ " .Третьей цифры нет");
+    }
     
 }
 
@@ -48,5 +53,5 @@ else
 }
 
 //Zadacha10();
-//Zadacha13();
-Zadacha15();
+Zadacha13();
+//Zadacha15();
