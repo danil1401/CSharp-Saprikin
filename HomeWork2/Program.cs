@@ -3,6 +3,9 @@
 void Zadacha10()//Задача 10. Написать программу, которая принимает на вход трехзначное число и на выходе показывает вторую чифру этого числа.
 //456->5
 {
+    Console.WriteLine("Задача 10");
+    Console.WriteLine();
+
 Random random = new Random();
 int number = random.Next(100, 1000);
 /*Console.WriteLine("Введите число: ");
@@ -20,6 +23,9 @@ void Zadacha13()//Задача 13.Написать программу, кото�
 //654->4
 //78->третьей цифры нет
 {
+    Console.WriteLine("Задача 13");
+    Console.WriteLine();
+
     Random random=new Random();
     int number =random.Next(10,150);
     if(number>100)
@@ -39,6 +45,8 @@ void Zadacha15()// Задача 15. Написать программу, кот�
 //6-> да
 //1-> нет
 {
+    Console.WriteLine("Задача 15");
+    Console.WriteLine();
 Random random = new Random();
 int number =random.Next(1, 7);
 
