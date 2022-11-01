@@ -1,0 +1,3 @@
+﻿Console.Clear();
+
+void Zadacha();//
