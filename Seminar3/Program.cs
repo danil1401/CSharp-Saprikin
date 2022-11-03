@@ -130,5 +130,5 @@ void Zadacha22_while()// Решение Задача 22 через цикл whil
 //Zadacha17();
 //Zadacha18();
 //Zadacha21();
-//Zadacha22();
-Zadacha22_while();
+Zadacha22();
+//Zadacha22_while();
