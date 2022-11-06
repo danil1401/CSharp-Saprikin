@@ -68,37 +68,34 @@ void Task30()
 {
     Random random = new Random();
     int size = random.Next(4, 10); // присваивание переменной  size значения рандома от 4 до 10
-    int[] array = new int[size]; // array-так называют массив
+    int[] numbers = new int[size]; // array-так называют массив
 
-    for (int i = 0; i < size; i++) // цикл на заполнение массива
-    {
-        array[i] = random.Next(0, 2); //заполнение массива случыными 0 и 2
-    }
+    FillArray(numbers);
 
-    for (int i = 0; i < size; i++) // цикл на печатанье массива
-    {
-        Console.Write(array[i] + "\t "); // \t- табуляция между значениями
-    }
-    Console.WriteLine();
+    PrintArray(numbers);
 
     //Console.WriteLine(array[0]); //Вывод на печать значения массива под 0 индексом, в [] указывается ИНДЕКС элемента
 }
+void FillArray(int[] num) //Метод для заполнения массива к задача 30
+{
+    Random random = new Random();
+    for (int i = 0; i < num.Length; i++)
+    {
+        num[i] = random.Next(0, 2);
+    }
+}
 
-void FillArray(int[] arr) //Метод для заполнения массива к задача 30
+void PrintArray(int[] num) //Метод для печатанья массива к задача 30
 {
     for (int i = 0; i < num.Length; i++)
     {
-        arr[i] = random.Next(0, 2);
+        Console.Write(num[i] + ",   ");
     }
+    Console.Write("\b\b\b");
+    Console.WriteLine();
 }
 
-void PrintArray(int[] arr) //Метод для печатанья массива к задача 30
-{
-    for (int i = 0; i < size; i++)
-    {
-        Console.Write(array[i] + "\t ");
-    }
-}
+
 //Zadacha24();
 //Zadacha26();
 //Zadacha28();
